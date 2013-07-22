@@ -1,256 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>My First Bitstarter</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" rel="stylesheet"
-	  href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" >
-    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
-    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
-    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
-    <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic, 500italic,700italic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" rel="stylesheet" type="text/css">
-		 
-    <style type="text/css">
+<head>
+	<meta charset="utf-8">
+	<title>My First Bitstarter</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link type="text/css" rel="stylesheet"
+		href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
+	<link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
+	<script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
+	<script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
+	<link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic, 500italic,700italic" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" rel="stylesheet" type="text/css">
 
-      /* Large desktop */
+	<style type="text/css">
+		/* Large desktop */
 
-      @media (min-width: 980px) {
+		@media (min-width: 980px) {
 
-      body {
-      padding-top: 60px;
-      }
+			body {
+				padding-top: 60px;
+			}
 
-      .linediv-l {
-      border-right: 1px white solid;
-      }
+			.linediv-l {
+				border-right: 1px white solid;
+			}
 
-      .linediv-r {
-      border-left: 1px white solid;
-      }
+			.linediv-r {
+				border-left: 1px white solid;
+			}
+		}
 
-      }
-      
-      /* Landscape phones and down */
+		/* Landscape phones and down */
 
-      @media (max-width: 480px) {
+		@media (max-width: 480px) {
 
-      .copy {
-      padding: 2.5% 10%;
-      }
+			.copy {
+				padding: 2.5% 10%;
+			}
 
-      .linediv-l {
-      border-bottom: 1px white solid;
-      }
+			.linediv-l {
+				border-bottom: 1px white solid;
+			}
 
-      .linediv-r {
-      border-top: 1px white solid;
-      }
+			.linediv-r {
+				border-top: 1px white solid;
+			}
+		}
 
-      }
+		/* All form factors */
 
-      /* All form factors */
+		/* Main body and heading */
 
-      /* Main body and heading */
+		body {
+			font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+		}
 
-      body {
-      font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-      }
-      
-      .heading, .subheading {
-      font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
-      text-align: center;
-      }
+		.heading, .subheading {
+			font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+			text-align: center;
+		}
 
-      p.lead {
-      padding-top: 1.5%;
-      font-size: 24px;
-      line-height: 30px;
-      }
+		p.lead {
+			padding-top: 1.5%;
+			font-size: 24px;
+			line-height: 30px;
+		}
 
-      p {
-      font-size: 18px;
-      line-height: 24px;
-      }
+		p {
+			font-size: 18px;
+			line-height: 24px;
+		}
 
-      /* Video pitch and Action */
+		/* Video pitch and Action */
 
-      .pitch {
-      padding: 2.5% 0%;
-      }
+		.pitch {
+			padding: 2.5% 0%;
+		}
 
-      .order {
-      padding: 2% 0%;
-      }
+		.order {
+			padding: 2% 0%;
+		}
 
-      .actions {
-      background-color: #343434;
-      padding: 3% 0%;
-      }
+		.actions {
+			background-color: #343434;
+			padding: 3% 0%;
+		}
 
-      .video, .thermometer, .order, .social, .statistics {
-      text-align: center;
-      }
+		.video, .thermometer, .order, .social, .statistics {
+			text-align: center;
+		}
 
-      .statistics h3, .statistics p {
-      color: white;
-      }
+			.statistics h3, .statistics p {
+				color: white;
+			}
 
-      /* Marketing Copy and Footer */
+		/* Marketing Copy and Footer */
 
-      .copy {
-      padding-top: 2.5%;
-      padding-bottom: 2.5%;
-      text-align: justify;
-      }
+		.copy {
+			padding-top: 2.5%;
+			padding-bottom: 2.5%;
+			text-align: justify;
+		}
 
-      .asset {
-      padding: 2.5% 0%;
-      }
+		.asset {
+			padding: 2.5% 0%;
+		}
 
-      .footer {
-      color: #cccccc;
-      text-align: center;
-      }
+		.footer {
+			color: #cccccc;
+			text-align: center;
+		}
 
-      .footer p {
-      font-size: 11px;
-      }
+			.footer p {
+				font-size: 11px;
+			}
 
-      .footer a {
-      color: #ccccff;
-      }
-    </style>
-  </head>  
-  <body>
-<div class="navbar navbar-inverse navbar-fixed-top">
-  <div class="navbar-inner">
-    <div class="container">
-      <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-	<span class="icon-bar"></span>
-	<span class="icon-bar"></span>
-	<span class="icon-bar"></span>
-	</button>
-      <a class="brand" href="#">Bitstarter</a>
-      <div class="nav-collapse collapse">
-	<ul class="nav">
-	  <li class="active"><a href="#">Home</a></li>
-	  <li><a href="#about">About</a></li>
-	  <li><a href="#contact">Contact</a></li>
-	  </ul>
-	</div>
-    </div>
-  </div>
-</div>
-    <div class="container">
-      <div class="row-fluid heading">
-	<div class="span12">
-	  <h1>Product</h1>
-	</div>
-      </div>
-    <div class="row-fluid subheading">
-      <div class="span12">
-	<p class="lead">One sentence description.</p>
-	</div>
-      </div>
-    <div class="row-fluid pitch">
-      <div class="span5 offset1 video">
-	<img class="img-polaroid" src="http://placehold.it/480x300">
-      </div>
-      
-      <div class="span5 actions">
-	<div class="span8 offset2">
-	  <div class="statistics">
-	    <div class="span4">
-	      <div class="linediv-l">
-		<h3>1000</h3> <p>backers</p>
-	      </div>
-	    </div>
-	    <div class="span4">
-	      <div class="linediv-c">
-		<h3>$6000</h3> <p>of $10,000</p>
-	      </div>
-	    </div>
-	    <div class="span4">
-	      <div class="linediv-r">
-		<h3>10</h3> <p>days left</p>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-	<div class="span10 offset1">
-	  <div class="thermometer progress active">
-	    <div class="bar bar-success" style="width: 60%;"></div>
-	    <div class="bar bar-warning" style="width: 40%;"></div>
-	  </div>
-	</div>
-	<div class="span6 offset3 order">
-	  <button class="btn btn-success btn-large">Preorder</button>
-	</div>
-	<div class="span8 offset2 social">
-	  <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
-	  <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
-	</div>
-      </div>
-      </div>
-    <div class="row-fluid section1">
-      <div class="span5 offset1 asset">
-	<img class="img-polaroid" src="http://placehold.it/480x300">
-      </div>
-	  <div class="span5 copy">
-	    <p>
-	    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean metus metus, tempor ac massa et, volutpat elementum augue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce rutrum gravida nisl. Duis massa orci, euismod quis dictum nec, adipiscing a libero. In pellentesque purus cursus varius posuere. Integer in venenatis est. Aenean vulputate arcu at ligula suscipit, vitae molestie magna posuere. Sed nec nibh sapien. Mauris diam elit, placerat in ornare at, facilisis quis arcu. Nulla tortor est, convallis in turpis sed, vulputate congue massa. Pellentesque nunc dui, convallis ac tincidunt eget, placerat sed urna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-	    </p>
-	    </div>
-	  </div>
-	<div class="row-fluid section2">
-	  <div class="span5 offset1 copy copy-right">
-	    <p>
-	      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean metus metus, tempor ac massa et, volutpat elementum augue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce rutrum gravida nisl. Duis massa orci, euismod quis dictum nec, adipiscing a libero. In pellentesque purus cursus varius posuere. Integer in venenatis est. Aenean vulputate arcu at ligula suscipit, vitae molestie magna posuere. Sed nec nibh sapien. Mauris diam elit, placerat in ornare at, facilisis quis arcu. Nulla tortor est, convallis in turpis sed, vulputate congue massa. Pellentesque nunc dui, convallis ac tincidunt eget, placerat sed urna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-	      </p>
-	    </div>
-	  <div class="span5 asset">
-	    <img class="img-polaroid" src="http://placehold.it/480x300">
-	  </div>
-	  </div>
-	<div class="row-fluid faq">
-	  <div class="span10 offset1">
-	    <h3>FAQ</h3>
-	    <div class="accordion" id="accordion2">
-	      <div class="accordion-group">
-		<div class="accordion-heading">
-		  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-		    What does FAQ stand for?
-		  </a>
-	    </div>
-	    <div id="collapseOne" class="accordion-body collapse">
-	      <div class="accordion-inner">
-		Frequently Asked Question.
+			.footer a {
+				color: #ccccff;
+			}
+	</style>
+</head>
+<body>
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="brand" href="#">Bitstarter</a>
+				<div class="nav-collapse collapse">
+					<ul class="nav">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+			</div>
 		</div>
-	  </div>
-	    </div>
-	      <div class="accordion-group">
-		<div class="accordion-heading">
-		  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo"> What's a Frequently Asked Question?
-		    </a>
-		  </div>
-		<div id="collapseTwo" class="accordion-body collapse">
-		  <div class="accordion-inner">
-		    A question which is commonly asked by users.
-		  </div>
-		  </div>
+	</div>
+	<div class="container">
+		<div class="row-fluid heading">
+			<div class="span12">
+				<h1>Green Pig</h1>
+			</div>
 		</div>
-	      </div>
-	    </div>
-	  </div>
+		<div class="row-fluid subheading">
+			<div class="span12">
+				<p class="lead">International Price Comparer</p>
+			</div>
+		</div>
+		<div class="row-fluid pitch">
+			<div class="span5 offset1 video">
+				<img class="img-polaroid" src="http://to-hatch.co.uk/wp-content/uploads/2010/11/shutterstock_18511663-578x385.jpg">
+			</div>
 
-	<div class="row-fluid footer">
-	  <div class="span12">
-	    <p> This work is licensed under the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC By-SA 3.0</a>, without all the cruft that would otherwise be put at the bottom of the page</p>
-	    </div>
-	  </div>
+			<div class="span5 actions">
+				<div class="span8 offset2">
+					<div class="statistics">
+						<div class="span4">
+							<div class="linediv-l">
+								<h3>2</h3>
+								<p>backers</p>
+							</div>
+						</div>
+						<div class="span4">
+							<div class="linediv-c">
+								<h3>$1000</h3>
+								<p>of $15,000</p>
+							</div>
+						</div>
+						<div class="span4">
+							<div class="linediv-r">
+								<h3>60</h3>
+								<p>days left</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="span10 offset1">
+					<div class="thermometer progress active">
+						<div class="bar bar-success" style="width: 7%;"></div>
+						<div class="bar bar-warning" style="width: 93%;"></div>
+					</div>
+				</div>
+				<div class="span6 offset3 order">
+					<button class="btn btn-success btn-large">Preorder</button>
+				</div>
+				<div class="span8 offset2 social">
+					<button class="btn btn-twitter"><i class="icon-twitter"></i>| Twitter</button>
+					<button class="btn btn-facebook"><i class="icon-facebook"></i>| Facebook</button>
+				</div>
+			</div>
+		</div>
+		<div class="row-fluid section1">
+			<div class="span5 offset1 asset">
+				<img class="img-polaroid" src="http://laurageorginasmith.com/wp-images/shopping.jpg">
+			</div>
+			<div class="span5 copy">
+				<p>Shopping online? Looking for savings?</p>
+				<p>What if your product is cheapper in other country?</p>
+				<p><b>Find out where and start saving with Green Pig!</b></p>
+			</div>
+		</div>
+		<div class="row-fluid section2">
+			<div class="span5 offset1 copy copy-right">
+				<p>Travelling a lot?</p>
+				<p>Looking for unique present and a great deal?</p>
+				<p><b>With Green Pig that's easy!</b></p>
+			</div>
+			<div class="span5 asset">
+				<img class="img-polaroid" src="http://img.national-geographic.pl/uploads/pics/business_travel.jpg">
+			</div>
+		</div>
+		<div class="row-fluid faq">
+			<div class="span10 offset1">
+				<h3>FAQ</h3>
+				<div class="accordion" id="accordion2">
+					<div class="accordion-group">
+						<div class="accordion-heading">
+							<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">What is Green Pig?</a>
+						</div>
+						<div id="collapseOne" class="accordion-body collapse">
+							<div class="accordion-inner">
+								Green Pig is an international price comparing web site.
+							</div>
+						</div>
+					</div>
+					<div class="accordion-group">
+						<div class="accordion-heading">
+							<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">What is so special in Green Pig?</a>
+						</div>
+						<div id="collapseTwo" class="accordion-body collapse">
+							<div class="accordion-inner">
+								Green Pig combines the power of best national price comparing tools from several countries giving you the opportunity to find the best prices accross them all.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row-fluid footer">
+			<div class="span12">
+				<p>This work is licensed under the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC By-SA 3.0</a>, without all the cruft that would otherwise be put at the bottom of the page</p>
+			</div>
+		</div>
 	</div>
 </body>
 </html>
